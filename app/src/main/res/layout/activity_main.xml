@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indice De Masa Corporal"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/imc" />
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/Peso"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa tu peso"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/Altura"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa tu altura"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/lblMasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tu IMC es: 0"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presional para calcular" />
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnBorrar"
+            android:layout_width="183dp"
+            android:layout_height="46dp"
+            android:text="Borrar" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
